@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$text-color: #005bd5;
+$second-color: #002e6b;
+$primary-color: #005bd5;
+:root {
+  font-size: 62.5%;
+}
+
+.flexSpace {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+body {
+  font-size: 1.6rem;
+  max-width: 1024px;
+  margin: auto;
+  background-image: linear-gradient(70deg, $primary-color, $second-color);
+}
+
+@mixin Pattern-button() {
+  width: 110px;
+  height: 29px;
+  background-color: $primary-color;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  &:hover {
+    filter: brightness(1.2);
+  }
+}

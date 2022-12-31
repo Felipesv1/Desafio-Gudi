@@ -1,0 +1,182 @@
+$linear-gradiente: linear-gradient(180deg, $primary-color, $second-color);
+.box-cards {
+  display: flex;
+  width: 100%;
+  .card1 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-image: $linear-gradiente;
+  }
+
+  img {
+    width: 50%;
+    height: 32.7rem;
+    object-fit: cover;
+  }
+  .conteudo {
+    width: 43.8rem;
+    height: 20.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    $text-color: white;
+    color: $text-color;
+    text-align: center;
+
+    h6 {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 1.1rem;
+    }
+    span {
+      width: 50px;
+      height: 0.1px;
+      border: 1px solid $text-color;
+      margin-right: 5px;
+    }
+
+    h1 {
+      width: 32.4rem;
+      height: 8rem;
+      font-size: 35px;
+      font-weight: bold;
+      font-family: sans-serif;
+      margin: 5px;
+      text-align: left;
+    }
+    p {
+      font-weight: 200;
+      font-family: sans-serif;
+      text-align: left;
+    }
+    button {
+      @include Pattern-button();
+      margin: 10px;
+      border: 1px solid white;
+      background: transparent;
+    }
+  }
+  .card2 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+    background: white;
+  }
+
+  img {
+    width: 50%;
+    height: 32.7rem;
+    object-fit: cover;
+  }
+  .conteudo2 {
+    width: 43.8rem;
+    height: 20.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: $text-color;
+    text-align: center;
+
+    h6 {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 1.1rem;
+    }
+    span {
+      width: 50px;
+      height: 0.1px;
+      border: 1px solid blue;
+      margin-right: 5px;
+    }
+
+    h1 {
+      width: 32.4rem;
+      height: 8rem;
+      font-size: 35px;
+      font-weight: bold;
+      font-family: sans-serif;
+      margin: 5px;
+      text-align: left;
+    }
+    p {
+      font-weight: 200;
+      font-family: sans-serif;
+      text-align: left;
+    }
+    button {
+      @include Pattern-button();
+      margin: 10px;
+      background: transparent;
+      border: 1px solid $primary-color;
+      color: $text-color;
+    }
+  }
+  .card3 {
+    $linear-gradiente: linear-gradient(180deg, $primary-color, #002e6b);
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-image: $linear-gradiente;
+  }
+
+  img {
+    width: 50%;
+    height: 32.7rem;
+    object-fit: cover;
+  }
+  .conteudo3 {
+    width: 43.8rem;
+    height: 20.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+    text-align: center;
+
+    h6 {
+      display: flex;
+      align-items: center;
+      width: 100%;
+      height: 1.1rem;
+    }
+    span {
+      $text-color: white;
+      width: 50px;
+      height: 0.1px;
+      border: 1px solid $text-color;
+      margin-right: 5px;
+    }
+
+    h1 {
+      width: 42.4rem;
+      height: 8rem;
+      font-size: 35px;
+      font-weight: bold;
+      font-family: sans-serif;
+      margin: 5px;
+      text-align: left;
+    }
+    p {
+      font-weight: 200;
+      font-family: sans-serif;
+      text-align: left;
+    }
+    button {
+      $text-color: white;
+      @include Pattern-button();
+      margin: 10px;
+      background: transparent;
+      border: 1px solid $text-color;
+      color: $text-color;
+    }
+  }
+}

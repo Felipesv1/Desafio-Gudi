@@ -1,0 +1,76 @@
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin pattern-text() {
+  text-align: center;
+  @extend .flex;
+  width: 16.2rem;
+  height: 2.9rem;
+  color: #ffffff;
+  letter-spacing: 3px;
+  border: 1px solid #ffffff;
+  border-radius: 15px;
+  backdrop-filter: blur(45px);
+  font-family: sans-serif;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.locais {
+  width: 100%;
+  height: 20.2rem;
+  display: flex;
+  .rio_de_janeiro {
+    width: 25.5rem;
+    height: 20.2rem;
+    @extend .flex;
+    background-image: url(./img/rio-de-janeiro.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+
+    h6 {
+      @include pattern-text();
+    }
+  }
+  .rio_das_ostras {
+    width: 25.5rem;
+    height: 20.2rem;
+    @extend .flex;
+
+    background-image: url(./img/rio-das-ostras.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    h6 {
+      @include pattern-text();
+    }
+  }
+  .caldas_novas {
+    width: 25.5rem;
+    height: 20.2rem;
+    @extend .flex;
+
+    background-image: url(./img/caldas-novas.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    h6 {
+      @include pattern-text();
+    }
+  }
+  .amazonia {
+    width: 25.5rem;
+    height: 20.2rem;
+    @extend .flex;
+
+    background-image: url(./img/amazonia.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    h6 {
+      @include pattern-text();
+    }
+  }
+}

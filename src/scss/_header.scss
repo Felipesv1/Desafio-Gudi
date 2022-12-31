@@ -1,0 +1,40 @@
+header {
+  @extend .flexSpace;
+  width: 100%;
+  height: 4.5rem;
+  background-color: white;
+  img {
+    margin-left: 50px;
+  }
+  .box-nav {
+    width: 40%;
+
+    ul {
+      list-style: none;
+      @extend .flexSpace;
+      margin-right: 50px;
+
+      li {
+        color: $text-color;
+        cursor: pointer;
+
+        &:hover {
+          filter: brightness(1.2);
+        }
+
+        button {
+          width: 110px;
+          height: 29px;
+          background-color: $primary-color;
+          border: none;
+          border-radius: 15px;
+          color: white;
+          letter-spacing: 2px;
+          font-size: 1rem;
+          font-weight: bold;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
